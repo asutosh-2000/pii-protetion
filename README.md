@@ -55,9 +55,4 @@ The **PII Protect System** is designed as a web application with the following f
 
 ---
 
-## Team contributers
-- [Rudra Jena ](https://github.com/Rudra8984)
-- [Srujan Rana](https://github.com/Srujanrana07)
-- [Debasish Mohanty](https://github.com/Debasish-87)
-- [Priyanka Behura](https://github.com/Priyankabehura1718)
-- Chetak Kumar Majhi
+
