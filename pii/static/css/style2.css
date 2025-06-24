@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 600px;
+    height: 400px;
+    padding: 60px;
+    background-color: transparent;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+
+}
+
+.close:hover {
+    color: white;
+    background-color: rgb(211, 73, 73);
+}
+
+.modal-content img {
+    display: block;
+    width: auto;
+    height: 100%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+
+}
+
+.container {
+    display: inline;
+    padding: 60px 20px;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    margin: 60px 0px 0px 33px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 20px 25px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 14px;
+    transition: opacity .3s ease-in-out;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+button {
+    border: none;
+    margin-left: 14px;
+}
+
+.file,
+.file-preview {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.file input {
+    display: none;
+}
+
+.file-preview {
+    align-items: center;
+}
+
+.file-preview p {
+    margin-left: 16px;
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;
+}
+
+.file-name {
+    margin-left: 4px;
+    margin-top: 9px;
+}
+
+.inactive {
+    pointer-events: none;
+}
+
+.display-none {
+    display: none;
+}
+
+.btn-2 {
+    display: flex;
+    padding: 15px 40px;
+    border-radius: 12px;
+    color: #FFF;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.btn-2:focus {
+    outline: none;
+}
+
+.btn-2:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Glowing button */
+
+.glowing-btn {
+    display: flex;
+    margin-left: 40px;
+}

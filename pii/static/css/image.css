@@ -1,0 +1,149 @@
+.body {
+    margin: 0px;
+    padding: 0px;
+    background: black;
+}
+
+.good {
+    margin: 55px 12px 30px 150px;
+    background: black;
+    display: flex;
+    height: 79vh;
+    width: 152vh;
+
+
+}
+
+.ID {
+    background: #00000000;
+    margin: 49px 13px 7px 23px;
+    display: inline;
+    height: 25px;
+    padding: 178px 51px;
+    border-color: rgb(43, 43, 43);
+    opacity: 1;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 10px;
+    border-block-width: 1px;
+    border-style: solid;
+
+
+
+
+}
+
+
+
+.list-2 {
+    height: 382px;
+    width: 37vh;
+    overflow: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    border-color: rgb(43, 43, 43);
+    opacity: 1;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 10px;
+    border-block-width: 1px;
+    border-style: solid;
+
+
+}
+
+.head-id {
+    background: #ffffff;
+    display: inline;
+    padding: 10px 20px;
+    top: 104px;
+    position: absolute;
+    width: 100px;
+    left: 181px;
+    text-align: center;
+    color: black;
+
+
+}
+
+
+
+.info_data {
+    margin: 49px 5px;
+    height: 381px;
+
+
+
+
+
+}
+
+.info_data-head {
+    background: white;
+    position: absolute;
+    padding: 10px 20px;
+    top: 104px;
+    width: 182px;
+    left: 340px;
+    text-align: center;
+    color: rgb(0 0 0);
+
+
+}
+
+.document {
+    margin: 49px 0px 20px 5px;
+    padding: 48px 42px;
+    max-width: 414px;
+    height: 286px;
+
+
+
+
+}
+
+.line-10 {
+    content: " ";
+    height: 2px;
+    background-color: var(--essential-subdued, #ffffff);
+    display: block;
+    position: absolute;
+    left: 400px;
+    right: 0px;
+
+}
+
+
+.document img {
+    height: 296px;
+    width: 418px;
+
+
+}
+
+.document-head {
+    background: white;
+
+}
+
+.close-2 {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 34px;
+    right: 164px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+
+}
+
+.close-2:hover {
+    color: white;
+    background-color: rgb(211, 73, 73);
+}

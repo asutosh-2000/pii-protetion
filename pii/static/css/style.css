@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Familjen Grotesk', sans-serif;
+  /* background: #000000; */
+  background-color: #0b0d15;
+  color: #ffffff;
+}
+
+/* .Main-sec{
+    } */
+
+#my-div {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, .9);
+  opacity: 1;
+}
+
+
+
+
+.application {
+  /* background-image: url('../img/good.png'); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 104%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header/Navbar */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  height: 100px;
+  padding: 0 30px;
+}
+
+/* Logo */
+.logo {
+  width: 57px;
+  height: auto;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Desktop Menu */
+.desktop-main-menu {
+  margin-right: 50px;
+}
+
+/* .desktop-main-menu ul{
+    display: flex;
+}
+
+.desktop-main-menu ul li{
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 2px;
+} */
+
+.btn-section {
+  gap: 1.5rem;
+  padding-right: .5rem;
+}
+
+.log-in {
+  align-items: center;
+  display: flex;
+  gap: .25rem;
+  line-height: 1.25rem;
+  padding: .875rem 1.5rem;
+  white-space: normal;
+  color: #353535;
+  padding-right: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.s1,
+.s1 {
+  font-family: Actief Grotesque, Arial, Helvetica, sans-serif;
+  /* font-size: inherit; */
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.s1 {
+  border-radius: .5rem;
+  height: 2rem;
+  padding: .375rem .75rem;
+}
+
+.s2,
+.s2 {
+  align-items: center;
+  /* border-radius: 1rem; */
+  box-shadow: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  /* font-family: Actief Grotesque, Arial, Helvetica, sans-serif; */
+  /* font-size: inherit; */
+  /* font-size: 16px; */
+  /* font-weight: 500; */
+  gap: .5rem;
+  /* height: 3rem; */
+  justify-content: center;
+  /* line-height: 1; */
+  outline-width: 0;
+  /* padding: 1rem; */
+  text-decoration-line: none;
+  transition: all .15s cubic-bezier(.4, 0, .2, 1);
+  /* -webkit-user-select: none; */
+  /* -moz-user-select: none; */
+  user-select: none;
+  /* width: -moz-fit-content; */
+  width: fit-content;
+}
+
+.s3,
+.s3 {
+  background-color: #353535;
+  border: 0;
+  color: #f1f1f1;
+}
+
+.btn-section {
+  gap: 1.5rem;
+  padding-right: .5rem;
+}
+
+
+
+.menu-bar {
+  align-items: center;
+  background-color: #72b7da;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+  display: inline-flex;
+  font-family: Actief Grotesque, Arial, Helvetica, sans-serif;
+  font-size: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  height: 3rem;
+  line-height: 1.2;
+  outline: 1px solid rgba(0, 0, 0, .05);
+}
+
+/* Menu item bottom border */
+.desktop-main-menu ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transform-origin: right center;
+}
+
+.desktop-main-menu ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+  transition-duration: 0.4s;
+}
+
+.transfer {
+  height: 25.625em;
+  /* left: 5em; */
+  right: 31%;
+  margin: -12.8125em 0 0;
+  border-radius: .625rem;
+  /* box-shadow: 0 0 12px 0 rgba(0, 0, 0, .1), 0 10px 30px 0 rgba(0, 0, 0, .2); */
+  display: flex;
+  /* flex-direction: column; */
+  position: absolute;
+  width: 35.5em;
+  /* transition: transform .5s cubic-bezier(.77, 0, .175, 1); */
+  /* top: calc(50% - 3.75rem); */
+  /* z-index: 20; */
+  /* transform: scale(.85); */
+  /* background-color: hsla(0, 0%, 100%, .8); */
+  /* transition: all .4s, z-index 0s ease 125ms; */
+}
+
+.transfer-active {
+  -webkit-backdrop-filter: blur(0);
+  backdrop-filter: blur(20px);
+  transform: scale(1);
+  top: 50%;
+  /* background-color: transparent; */
+  z-index: 30;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, .1);
+  transition: all .4s;
+  z-index: 1;
+  /* backdrop-filter: blur(20px); */
+}
+
+/* .transfer-second-div {
+  
+} */
+
+.manage {
+  background-color: #333;
+  margin: 20px 20px 25px 20px;
+  padding: 17px;
+  text-align: center;
+  border-radius: 22px;
+}
+
+.btn-text {
+  background: #333;
+  border-color: black;
+  color: white;
+  text-align: center;
+  padding: 6px;
+  border-radius: 17px;
+}
+
+.text-ok {
+
+
+  width: 300px;
+  /* Set the width of the container */
+  height: 150px;
+  /* Set the height of the container */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  padding: 10px;
+  /* Add padding inside the div */
+  border: 1px solid #ccc;
+  /* Add a border to the div */
+  border-radius: 10px;
+  /* Make the corners rounded */
+  background-color: #030303;
+  margin-bottom: 20px;
+  text-align: center;
+
+
+}
+
+.text-ok p {
+  color: white;
+  line-height: 1.6;
+  /* Line height for better readability */
+  font-family: Arial, sans-serif;
+  /* Choose a simple font */
+  word-wrap: break-word;
+}
+
+
+
+
+
+/* Upload button new */
+
+.button-89 {
+  --b: 3px;
+  /* border thickness */
+  --s: .45em;
+  /* size of the corner */
+  --color: #A7B8DF;
+
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 25px;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+
+
+/* check button new */
+
+
+/* CSS */
+.button-23 {
+  background-color: #72b7da;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+  margin-right: 30px;
+}
+
+.button-23:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button-23:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.button-23:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+/* Prevew button new  */
+.button-59 {
+  align-items: center;
+  background-color: #72b7da;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-59:focus {
+  color: #171e29;
+}
+
+.button-59:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.button-59:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}
+
